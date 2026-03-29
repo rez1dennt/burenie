@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css" />
 </head>
 <body>
 
@@ -15,13 +16,10 @@
   <header id="nav" class="nav">
     <div class="container">
       <nav class="nav-inner">
-        <a href="#hero" class="nav-logo">
-          <svg class="nav-logo-icon" viewBox="0 0 24 28" fill="none">
-            <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" fill="currentColor" opacity="0.3"/>
-            <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M9 18a4 4 0 0 0 3 3" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
-          </svg>
-          НТС
+        <a href="#hero" class="nav-logo" aria-label="Невотехстрой">
+          <span class="nav-logo-badge">
+            <img src="./images/logo.webp" class="nav-logo-image" alt="Невотехстрой" decoding="async" />
+          </span>
         </a>
         <ul class="nav-links">
           <li><a href="#about">О компании</a></li>
@@ -49,7 +47,7 @@
   </header>
 
   <!-- HERO -->
-  <!-- ВАЖНО: сохраните фото буровой установки в папку проекта как "hero.jpg" -->
+  <!-- ВАЖНО: сохраните фото буровой установки в папку проекта как "hero.webp" -->
   <section id="hero" class="hero">
     <div class="hero-bg">
       <div class="hero-overlay"></div>
@@ -187,19 +185,19 @@
       </div>
       <div class="portfolio-grid">
         <div class="p-card p-card--wide reveal">
-          <img src="./images/бур на объекте.jpg" alt="Буровая установка на объекте" loading="lazy" />
+          <img src="./images/бур на объекте.webp" alt="Буровая установка на объекте" loading="lazy" />
           <div class="p-label"><h4>Буровая установка на объекте</h4><span>Процесс бурения · глубина 60 м</span></div>
         </div>
         <div class="p-card reveal reveal-d1">
-          <img src="./images/бурение скважины в частном.jpg" alt="Бурение скважины на участке" loading="lazy" />
+          <img src="./images/бурение скважины в частном.webp" alt="Бурение скважины на участке" loading="lazy" />
           <div class="p-label"><h4>Бурение на частном участке</h4><span>Обустройство · насосное оборудование</span></div>
         </div>
         <div class="p-card reveal reveal-d2">
-          <img src="./images/насосное оборудование.jpg" alt="Насосное оборудование" loading="lazy" />
+          <img src="./images/насосное оборудование.webp" alt="Насосное оборудование" loading="lazy" />
           <div class="p-label"><h4>Насосное оборудование</h4><span>Монтаж · подключение водоснабжения</span></div>
         </div>
         <div class="p-card reveal reveal-d1">
-          <img src="./images/обсадная труба.jpg" alt="Обсадные трубы" loading="lazy" />
+          <img src="./images/обсадная труба.webp" alt="Обсадные трубы" loading="lazy" />
           <div class="p-label"><h4>Обсадные трубы</h4><span>Монтаж колонны · глубина 30 м</span></div>
         </div>
         <div class="p-card reveal reveal-d2">
@@ -316,13 +314,10 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="#hero" class="nav-logo">
-            <svg class="nav-logo-icon" viewBox="0 0 24 28" fill="none">
-              <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" fill="currentColor" opacity="0.3"/>
-              <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M9 18a4 4 0 0 0 3 3" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
-            </svg>
-            НТС
+          <a href="#hero" class="nav-logo" aria-label="Невотехстрой">
+            <span class="nav-logo-badge">
+              <img src="./images/logo.webp" class="nav-logo-image" alt="Невотехстрой" loading="lazy" decoding="async" />
+            </span>
           </a>
           <p>Профессиональное бурение скважин на воду под ключ. Собственная техника, геологическое сопровождение, гарантия результата.</p>
         </div>

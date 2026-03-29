@@ -1,0 +1,47 @@
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.nav-logo:hover .nav-logo-badge {
+  transform: translateY(-1px);
+  border-color: rgba(232, 120, 32, 0.55);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.1));
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+}
+
+.nav-logo-image {
+  display: block;
+  width: clamp(96px, 10vw, 122px);
+  height: auto;
+}
+
+.footer-brand .nav-logo {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 360px) {
+  .nav-logo-badge {
+    padding: 5px 8px;
+    border-radius: 18px;
+  }
+
+  .nav-logo-image {
+    width: 92px;
+  }
+}

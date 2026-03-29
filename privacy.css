@@ -50,28 +50,6 @@ a:hover { color: var(--green); }
   flex-wrap: wrap;
 }
 
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--fh);
-  font-size: 22px;
-  color: #fff;
-  text-decoration: none;
-  flex-shrink: 0;
-}
-
-.nav-logo:hover { color: #fff; }
-
-.nav-logo span { color: var(--orange); }
-
-.nav-logo-icon {
-  width: 28px;
-  height: 32px;
-  color: var(--green);
-  flex-shrink: 0;
-}
-
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -145,12 +123,4 @@ a:hover { color: var(--green); }
   margin-right: auto;
   font-size: 13px;
   color: var(--muted);
-}
-
-@media (max-width: 360px) {
-  .nav-logo { font-size: 18px; }
-  .nav-logo-icon {
-    width: 22px;
-    height: 26px;
-  }
 }

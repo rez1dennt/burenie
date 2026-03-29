@@ -28,7 +28,7 @@
   --fh: 'Russo One', sans-serif;
   --fb: 'Golos Text', sans-serif;
 
-  --nav-h: 70px;
+  --nav-h: 82px;
   --r:  12px;
   --rl: 20px;
   --rx: 28px;
@@ -162,19 +162,6 @@ body.menu-open { overflow: hidden; }
   height: var(--nav-h);
 }
 
-/* Logo */
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--fh);
-  font-size: 22px;
-  color: #fff;
-  flex-shrink: 0;
-}
-.nav-logo span { color: var(--orange); }
-.nav-logo-icon { width:28px; height:32px; color:var(--green); flex-shrink:0; }
-
 /* Desktop links */
 .nav-links { display:flex; align-items:center; gap:4px; margin-left:auto; }
 .nav-links a {
@@ -282,7 +269,7 @@ body.menu-open { overflow: hidden; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('./images/hero.jpg');
+  background-image: url('./images/hero.webp');
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
@@ -687,7 +674,6 @@ body.menu-open { overflow: hidden; }
   padding-bottom: 44px;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
-.footer-brand .nav-logo { color:#fff; margin-bottom:14px; display:inline-flex; }
 .footer-brand p { font-size:14px; line-height:1.72; color:rgba(255,255,255,.5); max-width:270px; }
 .footer-col h4 {
   color:#fff; font-family:var(--fb); font-size:13px;
@@ -745,7 +731,7 @@ body.menu-open { overflow: hidden; }
    RESPONSIVE — ≤1024px (tablet)
 ════════════════════════════════════════════════════════════ */
 @media (max-width:1024px) {
-  :root { --nav-h: 64px; }
+  :root { --nav-h: 72px; }
 
   .nav-links  { display:none; }
   .nav-phone  { display:none; }
@@ -817,10 +803,7 @@ body.menu-open { overflow: hidden; }
    RESPONSIVE — ≤360px / 320px (tiny)
 ════════════════════════════════════════════════════════════ */
 @media (max-width:360px) {
-  :root { --nav-h: 58px; }
-
-  .nav-logo { font-size:18px; }
-  .nav-logo-icon { width:22px; height:26px; }
+  :root { --nav-h: 64px; }
 
   .btn { padding:13px 20px; font-size:14px; }
 
