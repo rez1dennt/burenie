@@ -559,10 +559,19 @@ body.menu-open { overflow: hidden; }
   font-size:14px; font-weight:600;
   transition: var(--tf);
 }
+.msg-icon-img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
 .msg-wa { background:#25D366; color:#fff; }
 .msg-wa:hover { background:#1ebe5d; transform:translateY(-2px); box-shadow:0 4px 16px rgba(37,211,102,.38); }
 .msg-tg { background:#229ED9; color:#fff; }
 .msg-tg:hover { background:#1a8fc5; transform:translateY(-2px); box-shadow:0 4px 16px rgba(34,158,217,.38); }
+.msg-vk { background:#0077FF; color:#fff; }
+.msg-vk:hover { background:#0069e0; transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,119,255,.38); }
 
 /* Form */
 .form-wrap {
@@ -592,7 +601,7 @@ body.menu-open { overflow: hidden; }
   background: var(--white);
   transition: border-color var(--tf), box-shadow var(--tf);
   outline: none;
-  -webkit-appearance: none;
+  
 }
 .form-group select {
   cursor: pointer;
