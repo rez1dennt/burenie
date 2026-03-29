@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>АкваДрил — Бурение скважин на воду</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="nav" class="nav">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <svg class="nav-logo-icon" viewBox="0 0 24 28" fill="none">
+            <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" fill="currentColor" opacity="0.3"/>
+            <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 18a4 4 0 0 0 3 3" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+          Аква<span>Дрил</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#portfolio">Наши работы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <a href="tel:+79001234567" class="nav-phone">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 17z"/></svg>
+          +7 (900) 123-45-67
+        </a>
+        <button class="nav-burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav class="nav-mobile" id="mobile-menu" aria-hidden="true">
+      <a href="#about" class="mob-link">О компании</a>
+      <a href="#portfolio" class="mob-link">Наши работы</a>
+      <a href="#contacts" class="mob-link">Контакты</a>
+      <a href="tel:+79001234567" class="mob-link mob-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 17z"/></svg>
+        +7 (900) 123-45-67
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <!-- ВАЖНО: сохраните фото буровой установки в папку проекта как "hero.jpg" -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal">Бурение скважин под ключ</div>
+        <h1 class="hero-title reveal reveal-d1">
+          Чистая вода<br/>
+          <span class="hero-accent">на вашем участке</span>
+        </h1>
+        <p class="hero-subtitle reveal reveal-d2">
+          Бурим скважины с гарантией результата. Собственная техника,
+          фиксированные цены и геологическое сопровождение —
+          от заявки до первой воды без лишних затрат и нервов.
+        </p>
+        <div class="hero-cta reveal reveal-d3">
+          <a href="#contacts" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 17z"/></svg>
+            Получить консультацию
+          </a>
+          <a href="#about" class="btn btn-ghost">Узнать подробнее</a>
+        </div>
+        <div class="hero-stats reveal reveal-d4">
+          <div class="stat-item">
+            <div class="stat-value"><span class="stat-num" data-target="15">0</span><span class="stat-sup">+</span></div>
+            <div class="stat-label">лет опыта</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="stat-num" data-target="800">0</span><span class="stat-sup">+</span></div>
+            <div class="stat-label">скважин пробурено</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="stat-num" data-target="100">0</span><span class="stat-sup">%</span></div>
+            <div class="stat-label">гарантия результата</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="stat-num" data-target="5">0</span></div>
+            <div class="stat-label">единиц техники</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Прокрутить вниз">
+      <div class="scroll-hint-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <span>Листайте вниз</span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Почему выбирают нас</div>
+        <h2>Надёжность,<br/><span class="accent">подтверждённая опытом</span></h2>
+        <p>За 15 лет работы мы пробурили более 800 скважин. Каждый объект — под наблюдением геолога, с гарантией и без скрытых платежей.</p>
+      </div>
+      <div class="advantages-grid">
+
+        <div class="adv-card reveal reveal-d1">
+          <div class="adv-icon">
+            <svg viewBox="0 0 52 52" fill="none">
+              <rect x="22" y="2" width="8" height="48" rx="2" fill="currentColor" opacity="0.2"/>
+              <rect x="22" y="2" width="8" height="48" rx="2" stroke="currentColor" stroke-width="2"/>
+              <circle cx="26" cy="46" r="5" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 12h16M18 20h16M18 28h16" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>15 лет в бурении</h3>
+          <p>Богатый опыт работы на любых типах грунта — глина, скала, плывун. Знаем особенности региона и гидрогеологию.</p>
+        </div>
+
+        <div class="adv-card reveal reveal-d2">
+          <div class="adv-icon">
+            <svg viewBox="0 0 52 52" fill="none">
+              <rect x="4" y="32" width="44" height="10" rx="2" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 32V20M26 32V16M38 32V22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="14" cy="17" r="3" fill="currentColor"/>
+              <circle cx="26" cy="13" r="3" fill="currentColor"/>
+              <circle cx="38" cy="19" r="3" fill="currentColor"/>
+              <path d="M8 42h36" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Собственная техника</h3>
+          <p>5 буровых установок в парке — не арендуем, не зависим от сторонних компаний. Выезд в любой день без задержек.</p>
+        </div>
+
+        <div class="adv-card reveal reveal-d3">
+          <div class="adv-icon">
+            <svg viewBox="0 0 52 52" fill="none">
+              <rect x="6" y="8" width="40" height="36" rx="3" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 18h40" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 28h16M22 34h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="14" cy="13" r="2" fill="currentColor"/>
+              <circle cx="20" cy="13" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Фиксированные цены</h3>
+          <p>Называем итоговую стоимость до начала работ — никаких доплат в процессе. Смета в договоре, чётко и прозрачно.</p>
+        </div>
+
+        <div class="adv-card reveal reveal-d4">
+          <div class="adv-icon">
+            <svg viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="22" r="12" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/>
+              <path d="M26 10v4M26 30v4M14 22h4M34 22h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="26" cy="22" r="4" fill="currentColor"/>
+              <path d="M14 42c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Геологическое сопровождение</h3>
+          <p>Геолог определяет оптимальную точку бурения и глубину водоносного горизонта — экономите деньги и время.</p>
+        </div>
+
+        <div class="adv-card reveal reveal-d5">
+          <div class="adv-icon">
+            <svg viewBox="0 0 52 52" fill="none">
+              <path d="M26 6L30.5 16.5H42L33 23L36.5 34L26 27.5L15.5 34L19 23L10 16.5H21.5L26 6Z" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M18 44h16M22 48h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Гарантия на все работы</h3>
+          <p>Даём письменную гарантию на обсадную трубу, обустройство и дебит скважины. При проблемах — устраняем бесплатно.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <div>
+          <div class="section-tag reveal">Галерея объектов</div>
+          <h2 class="reveal reveal-d1">Наши работы</h2>
+        </div>
+        <p class="reveal reveal-d2">Реальные объекты — жилые дома, дачи, фермерские хозяйства, промышленные предприятия.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="p-card p-card--wide reveal">
+          <img src="https://images.unsplash.com/photo-1712069951097-b37e02e372fb?auto=format&fit=crop&w=900&q=80" alt="Буровая установка на объекте" loading="lazy" />
+          <div class="p-label"><h4>Буровая установка на объекте</h4><span>Процесс бурения · глубина 60 м</span></div>
+        </div>
+        <div class="p-card reveal reveal-d1">
+          <img src="https://images.unsplash.com/photo-1675060968711-d71df010a91f?auto=format&fit=crop&w=800&q=80" alt="Бурение скважины на участке" loading="lazy" />
+          <div class="p-label"><h4>Бурение на частном участке</h4><span>Обустройство · насосное оборудование</span></div>
+        </div>
+        <div class="p-card reveal reveal-d2">
+          <img src="https://images.unsplash.com/photo-1702259833575-c0f2005fe466?auto=format&fit=crop&w=800&q=80" alt="Насосное оборудование" loading="lazy" />
+          <div class="p-label"><h4>Насосное оборудование</h4><span>Монтаж · подключение водоснабжения</span></div>
+        </div>
+        <div class="p-card reveal reveal-d1">
+          <img src="https://images.unsplash.com/photo-1763950865631-4ca11bebe017?auto=format&fit=crop&w=800&q=80" alt="Обсадные трубы" loading="lazy" />
+          <div class="p-label"><h4>Обсадные трубы</h4><span>Монтаж колонны · глубина 30 м</span></div>
+        </div>
+        <div class="p-card reveal reveal-d2">
+          <img src="https://images.unsplash.com/photo-1763328044377-d37cd9052d99?auto=format&fit=crop&w=800&q=80" alt="Бригада на объекте" loading="lazy" />
+          <div class="p-label"><h4>Бригада на объекте</h4><span>Сдача работ · доволен клиент</span></div>
+        </div>
+        <div class="p-card reveal reveal-d3">
+          <img src="https://images.unsplash.com/photo-1760873059715-7c7cfbe2a2c6?auto=format&fit=crop&w=800&q=80" alt="Готовая скважина" loading="lazy" />
+          <div class="p-label"><h4>Готовая скважина</h4><span>Первая вода · глубина 120 м</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <div class="contacts-grid">
+
+        <div class="contacts-info reveal">
+          <div class="section-tag">Связаться с нами</div>
+          <h2>Оставьте заявку — <span class="accent">ответим за 15 минут</span></h2>
+          <p>Звоните, пишите или заполните форму. Мы бесплатно рассчитаем стоимость бурения на вашем участке.</p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 17z"/></svg>
+              </div>
+              <div><strong>Телефон</strong><a href="tel:+79001234567">+7 (900) 123-45-67</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div><strong>Email</strong><a href="mailto:info@akwadril.ru">info@akwadril.ru</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div><strong>Адрес офиса</strong><span>г. Москва, ул. Примерная, д. 12, офис 34</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div><strong>Режим работы</strong><span>Пн–Пт 8:00–19:00, Сб 9:00–16:00</span></div>
+            </div>
+          </div>
+
+          <div class="messengers">
+            <a href="https://wa.me/79001234567" class="msg-btn msg-wa" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://t.me/akwadril" class="msg-btn msg-tg" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Telegram
+            </a>
+          </div>
+        </div>
+
+        <div class="form-wrap reveal reveal-d2">
+          <h3>Заявка на расчёт стоимости</h3>
+          <p>Укажите данные — мы перезвоним и рассчитаем цену бесплатно</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name" name="name" placeholder="Иван Петров" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Вид работ</label>
+              <select id="service" name="service">
+                <option value="">Выберите тип</option>
+                <option>Бурение скважины на воду</option>
+                <option>Обустройство скважины</option>
+                <option>Геологическое исследование</option>
+                <option>Бурение для промышленного объекта</option>
+                <option>Ремонт / восстановление скважины</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Комментарий</label>
+              <textarea id="message" name="message" placeholder="Адрес объекта, тип грунта, нужная глубина — любые детали помогут точнее рассчитать стоимость"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Отправить заявку
+            </button>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></p>
+          </form>
+          <div class="form-success" id="formSuccess" hidden>
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <h3>Заявка отправлена!</h3>
+            <p>Мы перезвоним вам в течение 15 минут в рабочее время.</p>
+            <div class="countdown-bar"><div class="countdown-bar-fill" id="countdownFill"></div></div>
+            <span class="reset-hint">Форма обновится через <span id="countdown">10</span> сек</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <svg class="nav-logo-icon" viewBox="0 0 24 28" fill="none">
+              <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" fill="currentColor" opacity="0.3"/>
+              <path d="M12 2C12 2 3 11.5 3 17a9 9 0 0 0 18 0C21 11.5 12 2 12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M9 18a4 4 0 0 0 3 3" stroke="white" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+            </svg>
+            Аква<span>Дрил</span>
+          </a>
+          <p>Профессиональное бурение скважин на воду под ключ. Собственная техника, геологическое сопровождение, гарантия результата.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#portfolio">Наши работы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+            <li><a href="mailto:info@akwadril.ru">info@akwadril.ru</a></li>
+            <li><a href="https://wa.me/79001234567" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://t.me/akwadril" target="_blank" rel="noopener">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 АкваДрил. Все права защищены.</p>
+        <div class="footer-legal">
+          <a href="privacy.html" target="_blank">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY CALL (mobile) -->
+  <a href="tel:+79001234567" class="sticky-call" aria-label="Позвонить">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 17z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
