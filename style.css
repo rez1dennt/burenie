@@ -604,11 +604,40 @@ body.menu-open { overflow: hidden; }
   
 }
 .form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235A7A66' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
   padding-right: 40px;
+}
+.form-group select::-ms-expand { display:none; }
+.select-wrap {
+  position: relative;
+}
+.select-wrap select {
+  position: relative;
+  z-index: 1;
+}
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid #5A7A66;
+  border-bottom: 2px solid #5A7A66;
+  transform: translateY(-62%) rotate(45deg);
+  transform-origin: center;
+  transition: transform var(--tf), border-color var(--tf);
+  pointer-events: none;
+  z-index: 2;
+}
+.select-wrap.is-open .select-arrow {
+  transform: translateY(-40%) rotate(-135deg);
+  border-color: var(--green-dark);
+}
+.select-wrap:focus-within .select-arrow {
+  border-color: var(--green-dark);
 }
 .form-group textarea { resize:vertical; min-height:105px; }
 .form-group input::placeholder,

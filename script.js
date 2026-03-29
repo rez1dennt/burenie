@@ -123,6 +123,41 @@ if (phoneInput) {
   });
 }
 
+// ─── SELECT ARROW STATE ──────────────────────────────────────
+const selectWraps = [...document.querySelectorAll('.select-wrap')];
+const closeSelectArrows = () => {
+  selectWraps.forEach(wrap => wrap.classList.remove('is-open'));
+};
+
+document.addEventListener('pointerdown', e => {
+  selectWraps.forEach(wrap => {
+    if (!wrap.contains(e.target)) wrap.classList.remove('is-open');
+  });
+});
+
+window.addEventListener('blur', closeSelectArrows);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSelectArrows();
+});
+
+document.querySelectorAll('.select-wrap select').forEach(select => {
+  const wrap = select.closest('.select-wrap');
+  if (!wrap) return;
+
+  const open = () => wrap.classList.add('is-open');
+  const close = () => wrap.classList.remove('is-open');
+  const toggle = () => wrap.classList.toggle('is-open');
+
+  select.addEventListener('pointerdown', toggle);
+  select.addEventListener('change', close);
+  select.addEventListener('blur', close);
+  select.addEventListener('keydown', e => {
+    if (['ArrowDown', 'ArrowUp', 'Enter', ' '].includes(e.key)) open();
+    if (['Escape', 'Tab'].includes(e.key)) close();
+  });
+});
+
 // ─── ВАЛИДАЦИЯ ФОРМЫ ─────────────────────────────────────────
 const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
